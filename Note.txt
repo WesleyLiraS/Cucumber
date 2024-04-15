@@ -1,0 +1,13 @@
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		 tags = "@positive or @negative", 
+		 dryRun = false,
+		 snippets = SnippetType.CAMELCASE,
+		 monochrome = true,
+		 plugin = "pretty",
+		 features = "src/main/resources/features/Log.feature",
+		 glue = {"br.com.inmetrics.steps"}
+		)
+
+---------------------------------------------------------------
+Tags = "@nome" / "@nome or @nome" / "not(@nome)" / "@nome and not(@nome)"
